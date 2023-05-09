@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+html,body{
+    background-color: black;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 100%;
+}
+body{
+    display: grid;
+    grid-template-areas:'t t'
+                        'v r'
+                        'f f';
+    grid-template-rows: 70px 1fr 30px;
+    grid-template-columns: 3fr;                        
+}
+#topo{
+    grid-area: t;
+    background-color: rgba(83, 82, 82, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+#menu{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+#menu li a{
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+}
+#menu li a:hover{
+    background-color: white;
+    color:rgba(83,82,82,0.5);
+}
+#logo{
+    line-height: 50px;
+
+}
+#logo img{
+    height: 50px;
+    float: left;
+    margin-right: 20px;
+}
+#player{
+    background-color: purple;
+    grid-area: v;
+}
+#relacionados{
+    background-color: blue;
+    grid-area: r;
+
+}
+#footer{
+    background-color:brown ;
+    grid-area: f;
+}
