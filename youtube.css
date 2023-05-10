@@ -35,11 +35,23 @@ body{
     color: white;
     font-weight: bold;
     padding: 15px;
+    cursor: pointer;
+    
+}
+a{
+    text-decoration: none;
+    text-transform: capitalize;
 }
 #menu li a:hover{
-    background-color: white;
+    color: red;
+    /* background-color: white; */
     color:rgba(83,82,82,0.5);
 }
+
+h1{
+    color: aliceblue;
+}
+
 #logo{
     line-height: 50px;
 
